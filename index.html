@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Merienda:wght@700&display=swap" rel="stylesheet">
+    <title>Calculadora IMC</title>
+</head>
+<body>
+
+    <header>
+        <nav>
+            <div class="center">
+                <div class="date">
+                    <h2 id="data"></h2>
+                </div><!--date-->
+            </div><!--center-->
+        </nav>
+    </header>
+
+    <section class="section-form">
+        <div class="center">
+            <div class="container-form">
+                
+                <h2 style="text-align: center;">Bem-vindo a Calculadora de Índice de Massa Corporal</h2>
+                <p id="dizeres" style="text-align: justify;">Página desenvolvida para calcular o Índece de Massa Corporal de acordo com sua altura e peso. Também é realizado um calculo de Peso Ideal baseado na sua altura e no seu sexo. Lembrando que a forma de calcular foi desenvolvida através de conteúdos retirados em pesquisas na internet, sempre é bom procurar um profissional da área para melhores esclarecimentos. Agora utitilize à vontade a ferramenta e se gostar, compartilhe com seus amigos e familiares.</p>
+                
+                <form action="">                        
+                    
+
+                    <p>Digite seu nome:</p>
+                    <input type="text" name="nome" id="txtNome">
+                    <br>    
+                    <p>Selecione seu sexo:</p>
+                    <input type="radio" name="sexo" id="sexo" value="masc">
+                    <label for="Masc">Masculino</label>
+                    <input type="radio" name="sexo" id="sexo" value="fem">
+                    <label for="Fem">Feminino</label>
+                    <br>
+                    <p>Informe sua altura:</p>
+                    <input type="number" name="metros" id="txtMetro" placeholder="M">
+                    <input type="number" name="cent" id="txtCent" placeholder="CM">
+                    <br>
+                    <p>Informe o seu peso:  (exemplo 79,8)</p>
+                    <input type="text" name="peso" id="txtPeso" placeholder="KG">
+                    <br>
+                    <input type="button" value="Calcular" id="btnCalcular" onclick="Calcular()">
+                        
+                    <input type="button" value="Limpar" id="btnLimpar" onclick="Limpar()">              
+                </form>                             
+                           
+                <div class="resposta" id="resposta">
+                    <img src="tabela_imc.png" alt="">
+                </div><!--resposta-->
+
+            </div><!--container-form-->
+            <div class="clear"></div>   
+        </div><!--center-->
+    </section><!--section-form-->
+    <div class="clear"></div> 
+    
+
+    <footer>
+        <div class="center">
+            <h3>Desenvolvido por <a href="file:///C:/Users/gabriel.muri/Desktop/htdocs/Portif%C3%B3lio/index.html" target="_blank">Gabriel Muri</a></h3>
+        </div><!--center-->
+    </footer>
+    
+    <script src="functions.js"></script>
+
+</body>
+</html>
