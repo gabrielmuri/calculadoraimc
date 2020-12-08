@@ -172,6 +172,7 @@ footer a:hover{
 @media screen and (max-width: 537px){
     form{
         padding: 0 2%;
+        margin-top: 10px;
     }
 
     .resposta img{
