@@ -175,9 +175,30 @@ footer a:hover{
         margin-top: 10px;
     }
 
+    form{
+
+    }
+
     .resposta img{
         width: 300px;
-        height: 200px;
+        height: 200px;;
     }
 }
 
+@media screen and (max-width: 396px){
+    .container-form{
+        height: 1000px;px;
+    }
+}
+
+@media screen and  (max-width: 360px){
+    .container-form{
+        height: 1090px;
+    }
+}
+
+@media screen and (max-width: 334px){
+    .resposta img{
+        width: 250px;
+    }
+}
