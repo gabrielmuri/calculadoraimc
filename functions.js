@@ -74,10 +74,10 @@ function Calcular(){
     var calculoPI = ''
 
     if (sexo == 'masc'){
-        calculoPI = ((parseFloat(altura) - 100) * 0.85) * (-1)
+        calculoPI = ((parseFloat(altura) - 100) * 0.67) * (-1)
     }
     else if(sexo == 'fem'){
-        calculoPI = ((parseFloat(altura) - 100) * 0.70) * (-1)
+        calculoPI = ((parseFloat(altura) - 100) * 0.60) * (-1)
     }
        
     //define as repostas de acordo com o IMC
@@ -113,7 +113,7 @@ function Calcular(){
                      <p id="pesoIdeal">Dica de Peso Ideal: <strong>${calculoPI.toFixed(2)}</strong> Kg</p>
                      <p>Procure um profissional para uma avaliação adequada!</p>`
     }
-    else if(calculoImc > 39.9 && calculoImc <= 39.9){
+    else if(calculoImc > 34.9 && calculoImc <= 39.9){
         window.document.getElementById('resposta').innerHTML  = ` <p id="respNome">Olá ${nome}, segue seu resultado:</p>
                      <p id="respImc">O seu Indice de Massa Corporal é <strong>${calculoImc.toFixed(2)}</strong></p>
                      <p id="respClassificacao"><strong>Sua classificação é:</strong><p style="color:rgb(255,55,55);"><strong>Obesidade Severa (Grau II)</strong></p>
