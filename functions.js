@@ -110,7 +110,7 @@ function Calcular(){
                      <p id="respImc">O seu Indice de Massa Corporal é <strong>${calculoImc.toFixed(2)}</strong></p>
                      <p id="respClassificacao"><strong>Sua classificação é:</strong><p style="color:rgb(255,155,9);"><strong>Obesidade (Grau I)</strong></p>
                      <br>
-                     <p id="pesoIdeal">Dica de Peso Ideal: <strong>${calculoPI.toFixed}</strong> Kg</p>
+                     <p id="pesoIdeal">Dica de Peso Ideal: <strong>${calculoPI.toFixed(2)}</strong> Kg</p>
                      <p>Procure um profissional para uma avaliação adequada!</p>`
     }
     else if(calculoImc > 39.9 && calculoImc <= 39.9){
